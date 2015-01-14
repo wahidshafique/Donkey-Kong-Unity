@@ -1,0 +1,1136 @@
+fileFormatVersion: 2
+guid: 29ce02302edc61843b18a41d0b163f1a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DonkeyKongSprites_0
+    21300002: DonkeyKongSprites_1
+    21300004: DonkeyKongSprites_2
+    21300006: DonkeyKongSprites_3
+    21300008: DonkeyKongSprites_4
+    21300010: DonkeyKongSprites_5
+    21300012: DonkeyKongSprites_6
+    21300014: DonkeyKongSprites_7
+    21300016: DonkeyKongSprites_8
+    21300018: DonkeyKongSprites_9
+    21300020: DonkeyKongSprites_10
+    21300022: DonkeyKongSprites_11
+    21300024: DonkeyKongSprites_12
+    21300026: DonkeyKongSprites_13
+    21300028: DonkeyKongSprites_14
+    21300030: DonkeyKongSprites_15
+    21300032: DonkeyKongSprites_16
+    21300034: DonkeyKongSprites_17
+    21300036: DonkeyKongSprites_18
+    21300038: DonkeyKongSprites_19
+    21300040: DonkeyKongSprites_20
+    21300042: DonkeyKongSprites_21
+    21300044: DonkeyKongSprites_22
+    21300046: DonkeyKongSprites_23
+    21300048: DonkeyKongSprites_24
+    21300050: DonkeyKongSprites_25
+    21300052: DonkeyKongSprites_26
+    21300054: DonkeyKongSprites_27
+    21300056: DonkeyKongSprites_28
+    21300058: DonkeyKongSprites_29
+    21300060: DonkeyKongSprites_30
+    21300062: DonkeyKongSprites_31
+    21300064: DonkeyKongSprites_32
+    21300066: DonkeyKongSprites_33
+    21300068: DonkeyKongSprites_34
+    21300070: DonkeyKongSprites_35
+    21300072: DonkeyKongSprites_36
+    21300074: DonkeyKongSprites_37
+    21300076: DonkeyKongSprites_38
+    21300078: DonkeyKongSprites_39
+    21300080: DonkeyKongSprites_40
+    21300082: DonkeyKongSprites_41
+    21300084: DonkeyKongSprites_42
+    21300086: DonkeyKongSprites_43
+    21300088: DonkeyKongSprites_44
+    21300090: DonkeyKongSprites_45
+    21300092: DonkeyKongSprites_46
+    21300094: DonkeyKongSprites_47
+    21300096: DonkeyKongSprites_48
+    21300098: DonkeyKongSprites_49
+    21300100: DonkeyKongSprites_50
+    21300102: DonkeyKongSprites_51
+    21300104: DonkeyKongSprites_52
+    21300106: DonkeyKongSprites_53
+    21300108: DonkeyKongSprites_54
+    21300110: DonkeyKongSprites_55
+    21300112: DonkeyKongSprites_56
+    21300114: DonkeyKongSprites_57
+    21300116: DonkeyKongSprites_58
+    21300118: DonkeyKongSprites_59
+    21300120: DonkeyKongSprites_60
+    21300122: DonkeyKongSprites_61
+    21300124: DonkeyKongSprites_62
+    21300126: DonkeyKongSprites_63
+    21300128: DonkeyKongSprites_64
+    21300130: DonkeyKongSprites_65
+    21300132: DonkeyKongSprites_66
+    21300134: DonkeyKongSprites_67
+    21300136: DonkeyKongSprites_68
+    21300138: DonkeyKongSprites_69
+    21300140: DonkeyKongSprites_70
+    21300142: DonkeyKongSprites_71
+    21300144: DonkeyKongSprites_72
+    21300146: DonkeyKongSprites_73
+    21300148: DonkeyKongSprites_74
+    21300150: DonkeyKongSprites_75
+    21300152: DonkeyKongSprites_76
+    21300154: DonkeyKongSprites_77
+    21300156: DonkeyKongSprites_78
+    21300158: DonkeyKongSprites_79
+    21300160: DonkeyKongSprites_80
+    21300162: DonkeyKongSprites_81
+    21300164: DonkeyKongSprites_82
+    21300166: DonkeyKongSprites_83
+    21300168: DonkeyKongSprites_84
+    21300170: DonkeyKongSprites_85
+    21300172: DonkeyKongSprites_86
+    21300174: DonkeyKongSprites_87
+    21300176: DonkeyKongSprites_88
+    21300178: DonkeyKongSprites_89
+    21300180: DonkeyKongSprites_90
+    21300182: DonkeyKongSprites_91
+    21300184: DonkeyKongSprites_92
+    21300186: DonkeyKongSprites_93
+    21300188: DonkeyKongSprites_94
+    21300190: DonkeyKongSprites_95
+    21300192: DonkeyKongSprites_96
+    21300194: DonkeyKongSprites_97
+    21300196: DonkeyKongSprites_98
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: DonkeyKongSprites_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 271
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 270
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 271
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 290
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 289
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 288
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 286
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_7
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 290
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 270
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_9
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_10
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_11
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_13
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 225
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 225
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_15
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 223
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_16
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 223
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_17
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 248
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_18
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 229
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 229
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_20
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 229
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_21
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 229
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 174
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_23
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 174
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_24
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 176
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_25
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 174
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 201
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_27
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 201
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_28
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 202
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_29
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 179
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_30
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 179
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_31
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 179
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_32
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 129
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_33
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 129
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_34
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 129
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_35
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 152
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_36
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 152
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_37
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 152
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_38
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 152
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_39
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 125
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_40
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 120
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_41
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 120
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_42
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 128
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_43
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 128
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_44
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 120
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_45
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 120
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_46
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 119
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_47
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 119
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_48
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 95
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_50
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 96
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_51
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 94
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_52
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 94
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_53
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 94
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_54
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 94
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_55
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 94
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_56
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 94
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_57
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 95
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_58
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 89
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_59
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 90
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_60
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 89
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_61
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 89
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_62
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 89
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_63
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 89
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_64
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 89
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_65
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 54
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_66
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 54
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_67
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 55
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_68
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 77
+        width: 39
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_69
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 54
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_70
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 55
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_71
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 57
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_72
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 67
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_73
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 67
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_74
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 67
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_75
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 67
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_76
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 52
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_77
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 52
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_78
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 52
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_79
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 52
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_80
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 43
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_81
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 57
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_82
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 46
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_83
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 20
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_84
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 20
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_85
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 21
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_86
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 19
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_87
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 19
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_88
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 19
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_89
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 19
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_90
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 19
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_91
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_92
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 20
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_93
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 4
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_94
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 4
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_95
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 28
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_96
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_97
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DonkeyKongSprites_98
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
