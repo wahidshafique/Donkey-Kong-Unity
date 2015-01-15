@@ -42,7 +42,7 @@ public class MarioController : MonoBehaviour {
 			Anim.SetBool("Ground",false);
 			rigidbody2D.AddForce(new Vector2(0,JumpForce));
 		}
-	}
+	} 
 
 	void Flipper (){
 
