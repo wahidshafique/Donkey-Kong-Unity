@@ -41,8 +41,8 @@ public class MarioController : MonoBehaviour {
 		if (Grounded && Input.GetKeyDown(KeyCode.Space)){
 			Anim.SetBool("Ground",false);
 			rigidbody2D.AddForce(new Vector2(0,JumpForce));
+			}
 		}
-	} 
 
 	void Flipper (){
 
