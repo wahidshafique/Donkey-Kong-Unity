@@ -24,14 +24,16 @@ public class KeyHandler : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D col){
 		if (col.gameObject.tag=="2"){
+
+			}
 			if (Input.GetKeyDown(KeyCode.Return)){
 				Application.LoadLevel(2);}
 			 if (Input.GetKeyDown (KeyCode.UpArrow)){
 			transform.position = new Vector2(-1.815f, -0.326f);
 				initial=true;}
-				 if (Input.GetKeyDown (KeyCode.DownArrow)){
-					transform.position = new Vector2(-1.815f, -1.24f);
-				}
-			}
+		if (Input.GetKeyDown (KeyCode.DownArrow)){
+			transform.position = new Vector2(-1.815f, -1.24f);
+		}
 	}
-}
+	}
+
