@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\GameScripts\MarioController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\GameScripts\Timer.cs">
     <Files>
-      <File FileName="Assets\Game\GameScripts\MarioController.cs" Line="33" Column="40" />
+      <File FileName="Assets\Menu\MenuScripts\KeyHandler.cs" Line="35" Column="18" />
+      <File FileName="Assets\Game\GameScripts\Timer.cs" Line="26" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

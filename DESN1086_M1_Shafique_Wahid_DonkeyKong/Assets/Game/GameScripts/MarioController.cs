@@ -4,7 +4,7 @@ using System.Collections;
 public class MarioController : MonoBehaviour {
 
 	// Use this for initialization
-    bool CanMove=true; 
+    //bool CanMove=true; 
 	public float MaximumSpeed=10f;
 	bool MarioFacingRight=true;
 	Animator Anim;

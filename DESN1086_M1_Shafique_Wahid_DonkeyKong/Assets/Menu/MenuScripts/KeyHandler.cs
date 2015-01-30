@@ -2,23 +2,36 @@
 using System.Collections;
 
 public class KeyHandler : MonoBehaviour {
+	private bool initial=true;
 
 	// Use this for initialization
-	void Start () {
+	//void EnterKey (int take){
+		//if (Input.GetKey(KeyCode.Return)){
+		//	Application.LoadLevel(take);
+		//	print("load");
+	//	};
+//	}
 	
-	}
-	
-	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.Return)){
-			Application.LoadLevel(1);
-		};
-
+		if (initial){
+			if (Input.GetKeyDown(KeyCode.Return))
+			Application.LoadLevel(1);}
 		if (Input.GetKeyDown (KeyCode.DownArrow)){
-			transform.position = new Vector3(-1.815f, -0.78f, 0);
-		 //if (Input.GetKeyDown (KeyCode.DownArrow)){
-		//	transform.position = new Vector3(-1.815f, -1.22f, 0);
-		//}
+			transform.position = new Vector2(-1.815f, -0.78f);
+			initial=false;
+		} 
 	}
-}
+
+	void OnTriggerStay2D(Collider2D col){
+		if (col.gameObject.tag=="2"){
+			if (Input.GetKeyDown(KeyCode.Return)){
+				Application.LoadLevel(2);}
+			 if (Input.GetKeyDown (KeyCode.UpArrow)){
+			transform.position = new Vector2(-1.815f, -0.326f);
+				initial=true;}
+				 if (Input.GetKeyDown (KeyCode.DownArrow)){
+					transform.position = new Vector2(-1.815f, -1.24f);
+				}
+			}
+	}
 }
