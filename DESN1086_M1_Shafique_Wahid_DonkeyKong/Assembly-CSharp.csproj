@@ -46,11 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Game\GameScripts\DonkeyKong.cs" />
      <Compile Include="Assets\Game\GameScripts\MarioController.cs" />
+     <Compile Include="Assets\Game\GameScripts\UI.cs" />
      <Compile Include="Assets\Menu\MenuScripts\KeyHandler.cs" />
      <Compile Include="Assets\Menu\MenuScripts\Menu1Script.cs" />
      <Compile Include="Assets\Menu\MenuScripts\Menu2Script.cs" />
-     <None Include="Assets\Scenes\PressStart2P-Regular\OFL.txt" />
+     <None Include="Assets\Fonts\PressStart2P-Regular\OFL.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
