@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\GameScripts\UI.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\GameScripts\MarioController.cs">
     <Files>
       <File FileName="Assets\Menu\MenuScripts\KeyHandler.cs" Line="22" Column="5" />
-      <File FileName="Assets\Game\GameScripts\UI.cs" Line="17" Column="2" />
+      <File FileName="Assets\Game\GameScripts\UI.cs" Line="8" Column="2" />
+      <File FileName="Assets\Game\GameScripts\MarioController.cs" Line="63" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
