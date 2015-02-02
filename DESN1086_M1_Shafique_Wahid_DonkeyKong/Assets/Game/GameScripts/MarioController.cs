@@ -44,8 +44,9 @@ public class MarioController : MonoBehaviour {
 		//rigidbody2D.velocity = new Vector2 (0,0);
 		if (Grounded){
 		Ladder = true;
+
 		//MoveCheck=false;
-			Move=0;
+			//Move=0;
 		}
 	}
 	void OnTriggerExit2D (Collider2D other){
@@ -63,7 +64,9 @@ public class MarioController : MonoBehaviour {
 		if (Ladder && Input.GetAxis ("Vertical")>0 && Grounded){
 			Anim.SetBool("Ladder", Ladder);
 			transform.Translate (new Vector2(0, 0.2f)* Time.deltaTime*MaximumSpeed);
-			rigidbody2D.gravityScale=0;
+			rigidbody2D.gravityScale=0;	
+			if (Input.GetAxis ("Vertical") < 0)
+				transform.Translate (new Vector2(0, 0.2f)* Time.deltaTime*MaximumSpeed);
 		} else if (!Ladder) {
 			Anim.SetBool("Ladder",Ladder);
 			rigidbody2D.gravityScale=1;}
