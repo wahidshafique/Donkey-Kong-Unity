@@ -11,7 +11,7 @@ public class UI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Escape)){
-			Application.LoadLevel(3);
+			Application.LoadLevel(0);
 		}
 	}
 }

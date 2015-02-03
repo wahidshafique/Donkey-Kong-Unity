@@ -18,7 +18,7 @@ public class KeyHandler : MonoBehaviour {
 	void checker (int selectedItem){
 		if (selectedItem<2){
 		if (Input.GetKeyDown(KeyCode.Return)){
-				Application.LoadLevel(selectedItem);
+				Application.LoadLevel(selectedItem+1);
 			}
 		} else {
 			if (Input.GetKeyDown(KeyCode.Return)){
