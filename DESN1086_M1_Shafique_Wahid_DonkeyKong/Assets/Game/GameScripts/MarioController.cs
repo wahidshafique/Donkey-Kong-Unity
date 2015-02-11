@@ -16,7 +16,8 @@ public class MarioController : MonoBehaviour {
 	public Transform GroundCheck;
 	public LayerMask WhatIsGround;
 	
-	//TODO: when ground is false then you cannot press up arbitrariliy 
+	//TODO: when ground is false then you cannot press up arbitrarily 
+
 	void Start () {
 		Anim = GetComponent<Animator>();
 	}
@@ -65,11 +66,13 @@ public class MarioController : MonoBehaviour {
 			Anim.SetBool("Ladder", Ladder);
 			transform.Translate (new Vector2(0, 0.2f)* Time.deltaTime*MaximumSpeed);
 			rigidbody2D.gravityScale=0;	
+
 			if (Input.GetAxis ("Vertical") < 0)
-				transform.Translate (new Vector2(0, 0.2f)* Time.deltaTime*MaximumSpeed);
+				transform.Translate (new Vector2(0, -0.2f)* Time.deltaTime*MaximumSpeed);
 		} else if (!Ladder) {
 			Anim.SetBool("Ladder",Ladder);
-			rigidbody2D.gravityScale=1;}
+			rigidbody2D.gravityScale=1;
+			}
 		}
 
 	void Flipper (){
