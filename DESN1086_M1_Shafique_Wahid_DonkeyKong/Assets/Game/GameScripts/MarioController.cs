@@ -2,82 +2,79 @@
 using System.Collections;
 
 public class MarioController : MonoBehaviour {
-	Animator Anim;
+	Animator anim;
 
-	private bool MarioFacingRight=true;
-	private bool Grounded = false;
-	private bool Ladder = false;
-	private bool MoveCheck = true;
-	private float GroundRad = 0.2f;
-	private float Move;
+	private bool marioFacingRight=true;
+	private bool grounded = false;
+	private bool ladder = false;
+	private bool moveCheck = true;
+	private float groundRad = 0.2f;
+	private float move;
 
-	public float MaximumSpeed=10f;
-	public float JumpForce = 700f;
-	public Transform GroundCheck;
-	public LayerMask WhatIsGround;
+	public float maximumSpeed=10f;
+	public float jumpForce = 700f;
+	public Transform groundCheck;
+	public LayerMask whatIsGround;
 	
 	//TODO: when ground is false then you cannot press up arbitrarily 
 
 	void Start () {
-		Anim = GetComponent<Animator>();
+		anim = GetComponent<Animator>();
 	}
 
 	void FixedUpdate () {
-		Move = Input.GetAxis ("Horizontal");
+		move = Input.GetAxis ("Horizontal");
 
-		Grounded = Physics2D.OverlapCircle (GroundCheck.position, GroundRad, WhatIsGround);
-		Anim.SetBool ("Ground", Grounded);
+		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRad, whatIsGround);
+		anim.SetBool ("Ground", grounded);
 
-		Anim.SetFloat ("VSpeed", rigidbody2D.velocity.y);
+		anim.SetFloat ("VSpeed", GetComponent<Rigidbody2D>().velocity.y);
 
-		if (MoveCheck){
-		Anim.SetFloat("Speed", Mathf.Abs(Move));
-		rigidbody2D.velocity = new Vector2 (Move * MaximumSpeed, rigidbody2D.velocity.y);
-		if (Move > 0 && !MarioFacingRight)
+		if (moveCheck) {
+		anim.SetFloat("Speed", Mathf.Abs(move));
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (move * maximumSpeed, GetComponent<Rigidbody2D>().velocity.y);
+		if (move > 0 && !marioFacingRight)
 			Flipper();
-			else if (Move<0 && MarioFacingRight)
+			else if (move<0 && marioFacingRight)
 				Flipper();
 		}
 	}
 
 	void OnTriggerStay2D(Collider2D other){
-		print("hello");
 		//rigidbody2D.velocity = new Vector2 (0,0);
-		if (Grounded){
-		Ladder = true;
-
-		//MoveCheck=false;
-			//Move=0;
+		if (grounded && other.gameObject.tag == "ladder") {
+		ladder = true;
+		//moveCheck=false;
+			//move=0;
 		}
 	}
+
 	void OnTriggerExit2D (Collider2D other){
-		Ladder = false;
+		if (other.gameObject.tag == "ladder") ladder = false;
 		}
 	
 	void Update(){
-		if (Anim.GetBool("Ladder") == false && Grounded && Input.GetKeyDown(KeyCode.Space)){
-			Anim.SetBool("Ground",false);
-			rigidbody2D.AddForce(new Vector2(0,JumpForce));
+		if (anim.GetBool("Ladder") == false && grounded && Input.GetKeyDown(KeyCode.Space)){
+			anim.SetBool("Ground",false);
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0,jumpForce));
 		}
 
-		//TODO: 
-
-		if (Ladder && Input.GetAxis ("Vertical")>0 && Grounded){
-			Anim.SetBool("Ladder", Ladder);
-			transform.Translate (new Vector2(0, 0.2f)* Time.deltaTime*MaximumSpeed);
-			rigidbody2D.gravityScale=0;	
+		if (ladder && Input.GetAxis ("Vertical")>0 && grounded){
+			anim.SetBool("Ladder", ladder);
+			transform.Translate (new Vector2(0, 0.2f)* Time.deltaTime*maximumSpeed);
+			GetComponent<Rigidbody2D>().gravityScale=0;	
 
 			if (Input.GetAxis ("Vertical") < 0)
-				transform.Translate (new Vector2(0, -0.2f)* Time.deltaTime*MaximumSpeed);
-		} else if (!Ladder) {
-			Anim.SetBool("Ladder",Ladder);
-			rigidbody2D.gravityScale=1;
+				transform.Translate (new Vector2(0, -0.2f)* Time.deltaTime*maximumSpeed);
+		} else if (!ladder) {
+			anim.SetBool("Ladder",ladder);
+			GetComponent<Rigidbody2D>().gravityScale=1;
 			}
 		}
 
 	void Flipper (){
 
-		MarioFacingRight = !MarioFacingRight;
+		marioFacingRight = !marioFacingRight;
 
 		Vector3 TheScale = transform.localScale;
 
