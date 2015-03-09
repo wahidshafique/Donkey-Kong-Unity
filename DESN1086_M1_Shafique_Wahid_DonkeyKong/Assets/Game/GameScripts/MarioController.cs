@@ -10,9 +10,9 @@ public class MarioController : MonoBehaviour {
 	private bool moveCheck = true;
 	private float groundRad = 0.2f;
 	private float move;
+	private float maximumSpeed=2f;
+	private float jumpForce = 150f;
 
-	public float maximumSpeed=10f;
-	public float jumpForce = 700f;
 	public Transform groundCheck;
 	public LayerMask whatIsGround;
 	
@@ -39,10 +39,15 @@ public class MarioController : MonoBehaviour {
 				Flipper();
 		}
 	}
+	void OnTriggerEnter2D (Collider2D other){
+		if (other.gameObject.tag == "Hammer"){
+			anim.SetBool("HammerTime", true);
+		}
+	}
 
 	void OnTriggerStay2D(Collider2D other){
 		//rigidbody2D.velocity = new Vector2 (0,0);
-		if (grounded && other.gameObject.tag == "ladder") {
+		if (grounded && other.gameObject.tag == "Ladder") {
 		ladder = true;
 		//moveCheck=false;
 			//move=0;
@@ -50,7 +55,7 @@ public class MarioController : MonoBehaviour {
 	}
 
 	void OnTriggerExit2D (Collider2D other){
-		if (other.gameObject.tag == "ladder") ladder = false;
+		if (other.gameObject.tag == "Ladder") ladder = false;
 		}
 	
 	void Update(){
