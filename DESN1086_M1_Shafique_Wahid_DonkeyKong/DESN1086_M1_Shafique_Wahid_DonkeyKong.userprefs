@@ -1,15 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Loader.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\GameScripts\MarioController.cs">
     <Files>
-      <File FileName="Assets\Loader.cs" Line="12" Column="3" />
-      <File FileName="..\..\..\..\Desktop\Lab6ProjectWahidShafique\Assets\MyAssets\Scripts\Player\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\..\Desktop\Lab6ProjectWahidShafique\Assets\FlameScript.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\..\Desktop\Lab6ProjectWahidShafique\Assets\MyAssets\Scripts\Player\PlayerCollision.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\..\Desktop\Lab6ProjectWahidShafique\Assets\MyAssets\Scripts\Managers\AudioManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Menu\MenuScripts\KeyHandler.cs" Line="20" Column="41" />
-      <File FileName="Assets\Game\GameScripts\MarioController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game\GameScripts\UI.cs" Line="15" Column="2" />
+      <File FileName="Assets\Game\GameScripts\DonkeyKong.cs" Line="28" Column="26" />
+      <File FileName="Assets\Game\GameScripts\MarioController.cs" Line="91" Column="3" />
+      <File FileName="..\..\..\..\Desktop\DKUnity-master\DKUnity-master\Assets\Scripts\MarioControl.cs" Line="27" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -2,35 +2,34 @@
 using System.Collections;
 
 public class DonkeyKong : MonoBehaviour {
-	public GameObject Barrel;
-	private float fireRate = 2f;
-	private float nextFire = 1f;
 	Animator anim;
-
-
+	Transform barrelSpawnPos;
+	
 	void Start () {
-		anim = GetComponentInParent<Animator>();
-		StartCoroutine (barrelAnim());
+		
+		anim = gameObject.GetComponent<Animator>();
+		barrelSpawnPos = gameObject.transform.FindChild("BarrelSpitter");
+		StartCoroutine(SpawnBarrel(1.0f));
 	}
-
-	void Update () {
-
-		throwBarrel();
-
-		}
-
-	void throwBarrel (){
-		if (Time.time > nextFire) {
-			nextFire = Time.time + fireRate;
-			Vector3 position = transform.position;
-			Instantiate(Barrel, position, transform.rotation);
+	
+	IEnumerator SpawnBarrel(float delay) {
+		
+		yield return new WaitForSeconds(delay);
+		
+		anim.SetTrigger("ThrowBarrel");
+		StartCoroutine(SpawnBarrel(6.0f));
 	}
+	
+	public void ReleaseBarrel() {
+		
+		GameObject barrel = Instantiate(Resources.Load ("BarrelPrefab")) as GameObject;
+		barrel.transform.parent = transform;
+		barrel.transform.localPosition = barrelSpawnPos.localPosition;
+		barrel.name = "Barrel";
 	}
-
-	IEnumerator barrelAnim (){
-		while (true){
-			anim.SetBool("NormalBarrel", true);
-			yield return new WaitForSeconds (2f);
-		}
+	
+	public void Stop() {
+		anim.StopPlayback();
+		Destroy (this);
 	}
 }
