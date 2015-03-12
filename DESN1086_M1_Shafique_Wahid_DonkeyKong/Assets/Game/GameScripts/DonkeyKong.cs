@@ -2,17 +2,35 @@
 using System.Collections;
 
 public class DonkeyKong : MonoBehaviour {
+	public GameObject Barrel;
+	private float fireRate = 2f;
+	private float nextFire = 1f;
+	Animator anim;
 
-	// Use this for initialization
-	public Rigidbody2D Barrel;
+
 	void Start () {
-	
+		anim = GetComponentInParent<Animator>();
+		StartCoroutine (barrelAnim());
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-		Rigidbody clone;
-		clone = Instantiate(Barrel, transform.position, transform.rotation) as Rigidbody;
-		clone.velocity = transform.TransformDirection(Vector3.forward * 50);
+
+	void Update () {
+
+		throwBarrel();
+
+		}
+
+	void throwBarrel (){
+		if (Time.time > nextFire) {
+			nextFire = Time.time + fireRate;
+			Vector3 position = transform.position;
+			Instantiate(Barrel, position, transform.rotation);
+	}
+	}
+
+	IEnumerator barrelAnim (){
+		while (true){
+			anim.SetBool("NormalBarrel", true);
+			yield return new WaitForSeconds (2f);
+		}
 	}
 }

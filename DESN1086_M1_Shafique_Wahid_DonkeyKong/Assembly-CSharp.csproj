@@ -46,11 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BarrelScript.cs" />
      <Compile Include="Assets\DKAnimationControl.cs" />
      <Compile Include="Assets\Game\GameScripts\DonkeyKong.cs" />
      <Compile Include="Assets\Game\GameScripts\HammerScript.cs" />
      <Compile Include="Assets\Game\GameScripts\MarioController.cs" />
      <Compile Include="Assets\Game\GameScripts\UI.cs" />
+     <Compile Include="Assets\Loader.cs" />
      <Compile Include="Assets\Menu\MenuScripts\KeyHandler.cs" />
      <Compile Include="Assets\Menu\MenuScripts\Menu1Script.cs" />
      <Compile Include="Assets\Menu\MenuScripts\Menu2Script.cs" />
