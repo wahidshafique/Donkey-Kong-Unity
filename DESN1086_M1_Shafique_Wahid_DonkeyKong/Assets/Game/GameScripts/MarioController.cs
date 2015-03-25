@@ -92,6 +92,7 @@ public class MarioController : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Barrel"){
 			Destroy(this.gameObject);
+			PlayerData.Instance.Health--;
 		}
 	}
 
