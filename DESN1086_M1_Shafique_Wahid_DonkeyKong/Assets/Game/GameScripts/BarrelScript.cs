@@ -39,7 +39,7 @@ public class BarrelScript : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D otherCollider) {
 		
-		if (otherCollider.gameObject.tag == "OilDrum" || otherCollider.gameObject.tag == "Hammer") {
+		if (otherCollider.gameObject.tag == "OilDrum" || otherCollider.gameObject.tag == "Hammer" || otherCollider.gameObject.tag == "Player") {
 			Destroy(gameObject);
 		}
 		else if (otherCollider.gameObject.name == "Ladder" && Random.Range(0, 10) > 7) {

@@ -16,6 +16,5 @@ public class BarrelCheck : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Barrel")
 			PlayerData.Instance.Score += 100;
-
 	}
 }

@@ -28,7 +28,7 @@ public class KeyHandler : MonoBehaviour {
 		}
 	}
 
-	void Awake (){
+	void Start (){
 		blipper();
 	}
 	

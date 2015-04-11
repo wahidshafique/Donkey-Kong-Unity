@@ -7,10 +7,9 @@ public class HUD : MonoBehaviour
 	public Text score = null;
 	public Text highScore = null;
 	public Text timer = null;
-	//public Text health = null;
+	public GameObject timerholder = null;
 
 	public GameObject[] lives;
-	// Unity Script Singleton:
 	
 	private static HUD instance = null;
 	
@@ -28,17 +27,16 @@ public class HUD : MonoBehaviour
 			GameObject.Destroy(this.gameObject);
 		}
 	}
-	
-	// Update score and high score text values each frame.
+
 	void Update ()
 	{
-		//this.score.text = "" + PlayerData.Instance.Score ("000000");
-
-
 		this.score.text =  PlayerData.Instance.Score.ToString("000000");
 		this.highScore.text =  PlayerData.Instance.HighScore.ToString("000000");
-		this.timer.text = PlayerData.Instance.Timer.ToString("0000");
-		PlayerData.Instance.Timer -= Time.deltaTime * 100;
+		if (Application.loadedLevel == 5){
+			timerholder.SetActive(true);
+			this.timer.text = PlayerData.Instance.Timer.ToString("0000");
+			PlayerData.Instance.Timer -= Time.deltaTime * 100;
+		}
 	//	health.text = PlayerData.Instance.Health.ToString();
 		if (PlayerData.Instance.Health == 2)
 		lives[1].GetComponent<SpriteRenderer>().enabled = false;
@@ -48,22 +46,6 @@ public class HUD : MonoBehaviour
 
 		if (PlayerData.Instance.Health == 0)
 			lives[3].GetComponent<SpriteRenderer>().enabled = false;
-		//for (int i = 0; i < lives.Length; i++){
-		//	lives[i].GetComponent<SpriteRenderer>().enabled = false;
-		//}
-		//if (PlayerData.Instance.Health == 3)
-		//	lives
-		
-		//if (PlayerData.Instance.Health == 2)
-		//	health.text = "Health: <color=yellow>2</color>";
-		
-		//if (PlayerData.Instance.Health == 1)
-		//	health.text = "Health: <color=red>1</color>";
-		
-		//if (PlayerData.Instance.Health == 0)
-		//	health.text = "Health: <color=magenta>0</color>";*/
-		
-		
 	}
 	void OnLevelWasLoaded ()
 	{
