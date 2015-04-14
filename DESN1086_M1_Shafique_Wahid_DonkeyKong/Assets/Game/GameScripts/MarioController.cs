@@ -42,7 +42,6 @@ public class MarioController : MonoBehaviour {
 	void FixedUpdate () {
 		topTouch = Physics2D.OverlapCircle (topCheckObject.position, topRad, whatIsTop);
 
-
 		move = Input.GetAxis ("Horizontal");
 
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRad, whatIsGround);
@@ -70,8 +69,8 @@ public class MarioController : MonoBehaviour {
 		transform.localScale = TheScale;
 	}	
 	
-	void OnCollisionEnter2D(Collision2D coll){
-		if (coll.gameObject.tag == "Barrel"){
+	void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.tag == "Barrel") {
 			this.gameObject.tag = "DeadPlayer";
 			this.myRigidbody2D.isKinematic = true;
 			anim.SetBool("Death", true);
@@ -84,7 +83,7 @@ public class MarioController : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerStay2D(Collider2D other){
+	void OnTriggerStay2D(Collider2D other) {
 		//rigidbody2D.velocity = new Vector2 (0,0);
 		if (grounded && other.gameObject.tag == "Ladder" ) {
 			if (Input.GetAxis("Vertical") < 0 || Input.GetAxis("Vertical") > 0) {
@@ -94,7 +93,7 @@ public class MarioController : MonoBehaviour {
 			}
 		}
 	}
-	void OnTriggerExit2D (Collider2D other){
+	void OnTriggerExit2D (Collider2D other) {
 		if (other.gameObject.tag == "Ladder") {
 			ladder = false;
 			canJump = true;
@@ -117,23 +116,23 @@ public class MarioController : MonoBehaviour {
 		}
 	}
 
-	void LadderClimb(){
-
+	void LadderClimb() {
 		if (ladder){
 			float climbVel = 2 * Input.GetAxisRaw("Vertical");
+			myRigidbody2D.velocity = Vector2.zero;
 			myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVel);
 			myRigidbody2D.gravityScale=0; 
 			if (topTouch) {
 				Physics2D.IgnoreCollision(currentFloor, gameObject.GetComponent<Collider2D>());
+				currentFloor = null;
 				topTouch = false;
-				//GetComponent<Rigidbody2D>().velocity = Vector2.zero; 
 			} 
 		} else {
 			myRigidbody2D.gravityScale=1;
 		}
 	}
 
-	void OnTriggerEnter2D (Collider2D other){
+	void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.tag == "Hammer"){
 			anim.SetBool("HammerTime", true);
 			StartCoroutine (timedHammer());
@@ -142,10 +141,9 @@ public class MarioController : MonoBehaviour {
 		}
 	}
 	
-	IEnumerator timedHammer (){
+	IEnumerator timedHammer () {
 		yield return new WaitForSeconds(5);
 		anim.SetBool("HammerTime",false);
-		
 	}
 }
 
