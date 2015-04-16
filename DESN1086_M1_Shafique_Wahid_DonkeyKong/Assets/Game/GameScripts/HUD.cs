@@ -10,13 +10,13 @@ public class HUD : MonoBehaviour
 	public GameObject timerholder = null;
 
 	public GameObject[] lives;
+
+	public bool livesActive = true; 
 	
 	private static HUD instance = null;
 	
 	void Awake ()
 	{
-		lives = GameObject.FindGameObjectsWithTag("MarioLife");
-
 		if (instance == null)
 		{
 			GameObject.DontDestroyOnLoad(this.gameObject);
@@ -37,15 +37,20 @@ public class HUD : MonoBehaviour
 			this.timer.text = PlayerData.Instance.Timer.ToString("0000");
 			PlayerData.Instance.Timer -= Time.deltaTime * 100;
 		}
-	//	health.text = PlayerData.Instance.Health.ToString();
+	
+		if (Application.loadedLevel == 5) {
+			lives = GameObject.FindGameObjectsWithTag("MarioLife");
+			livesActive = false; 
+		}
+
 		if (PlayerData.Instance.Health == 2)
 		lives[1].GetComponent<SpriteRenderer>().enabled = false;
 
 		if (PlayerData.Instance.Health == 1)
-			lives[2].GetComponent<SpriteRenderer>().enabled = false;
+			lives[0].GetComponent<SpriteRenderer>().enabled = false;
 
 		if (PlayerData.Instance.Health == 0)
-			lives[3].GetComponent<SpriteRenderer>().enabled = false;
+			lives[2].GetComponent<SpriteRenderer>().enabled = false;
 	}
 	void OnLevelWasLoaded ()
 	{

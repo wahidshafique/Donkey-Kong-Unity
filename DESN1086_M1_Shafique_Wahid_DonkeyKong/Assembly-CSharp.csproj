@@ -61,6 +61,7 @@
      <Compile Include="Assets\Menu\MenuScripts\KeyHandler.cs" />
      <Compile Include="Assets\Menu\MenuScripts\Menu1Script.cs" />
      <Compile Include="Assets\Menu\MenuScripts\Menu2Script.cs" />
+     <Compile Include="Assets\TextHolderHelper.cs" />
      <None Include="Assets\Fonts\PressStart2P-Regular\OFL.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

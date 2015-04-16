@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class BarrelCheck : MonoBehaviour {
+	public AudioSource jumpBarrel; 
+	public GameObject contextScore; 
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +16,15 @@ public class BarrelCheck : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "Barrel")
+		if (other.tag == "Barrel") {
+			GameObject tempTextBox = Instantiate (this.contextScore) as GameObject;
+			tempTextBox.transform.position = this.transform.position;
+			
+			TextMesh theText = tempTextBox.transform.GetComponent<TextMesh>();
+			theText.text = "100";
 			PlayerData.Instance.Score += 100;
+			jumpBarrel.Play();
+		}
+
 	}
 }

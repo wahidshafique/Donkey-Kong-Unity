@@ -2,13 +2,12 @@
 using System.Collections;
 
 public class MarioController : MonoBehaviour {
-	//commented out code for testing purposes, still not entirely functional
-
 	Animator anim;
 	new Rigidbody2D myRigidbody2D;
 
 	private Collider2D currentFloor;
 
+	private bool hammer = false;
 	private bool marioFacingRight=true;
 	private bool grounded = false;
 	private bool ladder = false;
@@ -25,6 +24,7 @@ public class MarioController : MonoBehaviour {
 
 	public AudioSource deathClip;
 	public AudioSource jumpClip;
+	public AudioSource bg; 
 
 	public Transform groundCheck;
 	public Transform topCheckObject;
@@ -70,13 +70,16 @@ public class MarioController : MonoBehaviour {
 	}	
 	
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Barrel") {
+		if (coll.gameObject.tag == "Barrel" && !hammer) {
 			this.gameObject.tag = "DeadPlayer";
 			this.myRigidbody2D.isKinematic = true;
 			anim.SetBool("Death", true);
 			grounded = true;
 			deathClip.Play();
+			Time.timeScale = 0;
+			StartCoroutine(endSec());
 			PlayerData.Instance.Health--;
+
 		}
 		if (coll.collider.gameObject.name.Contains("Floor")) {
 			currentFloor = coll.collider;
@@ -106,6 +109,7 @@ public class MarioController : MonoBehaviour {
 		else moveCheck = true; 
 		jump();
 		LadderClimb();
+
 	}
 
 	void jump (){
@@ -117,7 +121,8 @@ public class MarioController : MonoBehaviour {
 	}
 
 	void LadderClimb() {
-		if (ladder){
+
+		if (ladder && !hammer){
 			float climbVel = 2 * Input.GetAxisRaw("Vertical");
 			myRigidbody2D.velocity = Vector2.zero;
 			myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVel);
@@ -134,16 +139,31 @@ public class MarioController : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.tag == "Hammer"){
+			hammer = true; 
 			anim.SetBool("HammerTime", true);
+			bg.pitch = 2; 
 			StartCoroutine (timedHammer());
 			this.gameObject.tag = "Hammer";
-			
 		}
 	}
 	
 	IEnumerator timedHammer () {
 		yield return new WaitForSeconds(5);
+		bg.pitch = 1; 
 		anim.SetBool("HammerTime",false);
+		hammer = false;
+		this.gameObject.tag = "Player";
+	}
+	IEnumerator endSec () {
+		float pauseEndTime = Time.realtimeSinceStartup + 1;
+		while (Time.realtimeSinceStartup < pauseEndTime)
+		{
+			yield return 0;
+		}
+		Time.timeScale = 1; 
+		if (PlayerData.Instance.Health == 0) {
+			Application.LoadLevel(0);
+		} else Application.LoadLevel(5); 
 	}
 }
 

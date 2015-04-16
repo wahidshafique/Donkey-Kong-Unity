@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class BarrelScript : MonoBehaviour {
 	
 	private Collider2D currentFloor;
 	private float timeUntilFallDown = int.MaxValue;
 	private int dir;
-	
+
+	public GameObject explosionPrefab;
+	public GameObject contextScore; 
+
 	void Start() {
 		dir = 1;
 	}
@@ -39,11 +43,23 @@ public class BarrelScript : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D otherCollider) {
 		
-		if (otherCollider.gameObject.tag == "OilDrum" || otherCollider.gameObject.tag == "Hammer" || otherCollider.gameObject.tag == "Player") {
+		if (otherCollider.gameObject.tag == "OilDrum") Destroy(gameObject);
+
+		if (otherCollider.gameObject.tag == "Hammer"){
 			Destroy(gameObject);
+			GameObject explosionObject = Instantiate(this.explosionPrefab) as GameObject;//create explosion at its last position
+			explosionObject.transform.position = this.transform.position;
+
+			GameObject tempTextBox = Instantiate (this.contextScore) as GameObject;
+			tempTextBox.transform.position = this.transform.position;
+
+			TextMesh theText = tempTextBox.transform.GetComponent<TextMesh>();
+			theText.text = "500";
+
+			PlayerData.Instance.Score += 500;
 		}
 		else if (otherCollider.gameObject.name == "Ladder" && Random.Range(0, 10) > 7) {
-			
+
 			if (otherCollider.transform.position.y < transform.position.y) {
 				timeUntilFallDown = 0.09f; // Fall down the ladder after 0.09 seconds
 			}
