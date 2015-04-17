@@ -4,6 +4,9 @@ using System.Collections;
 public class DonkeyKong : MonoBehaviour {
 	Animator anim;
 	Transform barrelSpawnPos;
+	public GameObject pauline;
+	private bool barrel = true; 
+	private bool animPlay = true;
 	
 	void Start () {
 		
@@ -11,13 +14,22 @@ public class DonkeyKong : MonoBehaviour {
 		barrelSpawnPos = gameObject.transform.FindChild("BarrelSpitter");
 		StartCoroutine(SpawnBarrel(1.0f));
 	}
+
+	void Update (){
+	if(pauline.GetComponent<PaulineScript>().DKhaul && animPlay){
+			anim.SetBool("End", true);
+			barrel = false;
+			animPlay = false;
+		}
+	}
 	
 	IEnumerator SpawnBarrel(float delay) {
-		
 		yield return new WaitForSeconds(delay);
+		if (barrel){
 		
 		anim.SetTrigger("ThrowBarrel");
-		StartCoroutine(SpawnBarrel(6.0f));
+			StartCoroutine(SpawnBarrel(6.0f));
+		}
 	}
 	
 	public void ReleaseBarrel() {

@@ -53,15 +53,16 @@
      <Compile Include="Assets\Game\GameScripts\FireballScript.cs" />
      <Compile Include="Assets\Game\GameScripts\HUD.cs" />
      <Compile Include="Assets\Game\GameScripts\HammerScript.cs" />
+     <Compile Include="Assets\Game\GameScripts\IntroAudioHelper.cs" />
      <Compile Include="Assets\Game\GameScripts\Loader.cs" />
      <Compile Include="Assets\Game\GameScripts\MarioController.cs" />
      <Compile Include="Assets\Game\GameScripts\OilBarrelScript.cs" />
+     <Compile Include="Assets\Game\GameScripts\PaulineScript.cs" />
      <Compile Include="Assets\Game\GameScripts\PlayerData.cs" />
-     <Compile Include="Assets\IntroAudioHelper.cs" />
+     <Compile Include="Assets\Game\GameScripts\TextHolderHelper.cs" />
      <Compile Include="Assets\Menu\MenuScripts\KeyHandler.cs" />
      <Compile Include="Assets\Menu\MenuScripts\Menu1Script.cs" />
      <Compile Include="Assets\Menu\MenuScripts\Menu2Script.cs" />
-     <Compile Include="Assets\TextHolderHelper.cs" />
      <None Include="Assets\Fonts\PressStart2P-Regular\OFL.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -5,8 +5,7 @@ public class MarioController : MonoBehaviour {
 	Animator anim;
 	new Rigidbody2D myRigidbody2D;
 
-	private Collider2D currentFloor;
-
+	public bool endGame = false; 
 	private bool hammer = false;
 	private bool marioFacingRight=true;
 	private bool grounded = false;
@@ -14,8 +13,10 @@ public class MarioController : MonoBehaviour {
 	private bool moveCheck = true;
 	private float groundRad = 0.05f;
 
+	private bool bottomTouch = false;
 	private bool topTouch = false; 
 	private float topRad= 0.05f;
+	private float bottomRad = 0.05f;
 
 	private float move;
 	private float maximumSpeed=2f;
@@ -28,20 +29,25 @@ public class MarioController : MonoBehaviour {
 
 	public Transform groundCheck;
 	public Transform topCheckObject;
+	public Transform bottomTouchObject; 
 
+	public LayerMask whatIsBottom; 
 	public LayerMask whatIsGround;
 	public LayerMask whatIsTop;
 
 	public GameObject flooring;
+	private GameObject scoreCheck; 
 
 	void Start () {
+		scoreCheck = GameObject.Find("ScoreCheck");
 		anim = GetComponent<Animator>();
 		myRigidbody2D = GetComponent<Rigidbody2D>();
 	}
 
 	void FixedUpdate () {
+		if (!endGame){
 		topTouch = Physics2D.OverlapCircle (topCheckObject.position, topRad, whatIsTop);
-
+		bottomTouch = Physics2D.OverlapCircle (bottomTouchObject.position, bottomRad, whatIsBottom);
 		move = Input.GetAxis ("Horizontal");
 
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRad, whatIsGround);
@@ -55,6 +61,7 @@ public class MarioController : MonoBehaviour {
 
 		if (move > 0 && !marioFacingRight) Flipper();
 			else if (move<0 && marioFacingRight) Flipper();
+		}
 		}
 	}
 	
@@ -70,7 +77,7 @@ public class MarioController : MonoBehaviour {
 	}	
 	
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Barrel" && !hammer) {
+		if ((coll.gameObject.tag == "Barrel" || coll.gameObject.tag == "Fireballs") && !hammer) {
 			this.gameObject.tag = "DeadPlayer";
 			this.myRigidbody2D.isKinematic = true;
 			anim.SetBool("Death", true);
@@ -80,9 +87,6 @@ public class MarioController : MonoBehaviour {
 			StartCoroutine(endSec());
 			PlayerData.Instance.Health--;
 
-		}
-		if (coll.collider.gameObject.name.Contains("Floor")) {
-			currentFloor = coll.collider;
 		}
 	}
 
@@ -105,11 +109,12 @@ public class MarioController : MonoBehaviour {
 	}
 	
 	void Update(){
+		if (!endGame){
 		if (!grounded && ladder) moveCheck = false;
 		else moveCheck = true; 
 		jump();
 		LadderClimb();
-
+		}
 	}
 
 	void jump (){
@@ -123,17 +128,25 @@ public class MarioController : MonoBehaviour {
 	void LadderClimb() {
 
 		if (ladder && !hammer){
-			float climbVel = 2 * Input.GetAxisRaw("Vertical");
+			scoreCheck.SetActive(false);
+			float climbVel = 1.5f * Input.GetAxisRaw("Vertical");
 			myRigidbody2D.velocity = Vector2.zero;
 			myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVel);
 			myRigidbody2D.gravityScale=0; 
 			if (topTouch) {
-				Physics2D.IgnoreCollision(currentFloor, gameObject.GetComponent<Collider2D>());
-				currentFloor = null;
+				//Physics2D.IgnoreCollision(currentFloor, gameObject.GetComponent<Collider2D>());//TODO
+				myRigidbody2D.isKinematic = true;
 				topTouch = false;
 			} 
-		} else {
+			if (bottomTouch) {
+				myRigidbody2D.isKinematic = true;
+				bottomTouch = false;
+			}
+		} 
+		else {
+			scoreCheck.SetActive(true);
 			myRigidbody2D.gravityScale=1;
+			myRigidbody2D.isKinematic = false;
 		}
 	}
 
@@ -144,6 +157,11 @@ public class MarioController : MonoBehaviour {
 			bg.pitch = 2; 
 			StartCoroutine (timedHammer());
 			this.gameObject.tag = "Hammer";
+		}
+		if (other.gameObject.tag == "End"){
+			endGame = true; 
+			myRigidbody2D.velocity = Vector2.zero;
+			anim.SetFloat("Speed", 0);
 		}
 	}
 	
@@ -163,7 +181,10 @@ public class MarioController : MonoBehaviour {
 		Time.timeScale = 1; 
 		if (PlayerData.Instance.Health == 0) {
 			Application.LoadLevel(0);
-		} else Application.LoadLevel(5); 
+		} else {
+			PlayerData.Instance.Timer = 5000f;
+			Application.LoadLevel(4); 
+		}
 	}
 }
 
